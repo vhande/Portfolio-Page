@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,200;1,300&family=Sorts+Mill+Goudy&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+}
+.nav-pills .nav-link {
+    border-radius: 0;
+    color:#FFFF;
+}
+
+.navbar {
+    background-color: #000000;
+    color: #FFFF;
+    font-size: large;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+body {
+    margin:0;
+    padding:0;
+    background-color: #FFFF;
+    font-family: 'Sorts Mill Goudy', serif;
+    min-height: 100vh;
+}
+
+.wrapper {
+    overflow-y: auto;
+    overflow:hidden;
+}
+
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+    height:100vh;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.carousel-control-next{
+    bottom:200vh; 
+    right:30%;
+   
+}
+
+.carousel-control-prev {
+    bottom:200vh;
+    left:30%;
+}
+
+.carousel-control-prev > svg, .carousel-control-next > svg {
+    height:1.5em;
+    width:1.5em;
+}
+
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    display:none;
+}
+
+.lead {
+    margin-left: 15%;
+    margin-right: 15%;
+    }
+
+a {
+    text-decoration: none;
+    color:black
+}
+
+@media only screen and (max-width: 375px) {
+   
+    body {
+     width: auto;
+     height: 100%;
+    }
+ 
+     .container-fluid {
+         width: auto;
+         height: auto;
+         margin-top: 15%;
+         padding-bottom: 8%;
+     }
+ 
+     .lead {
+         margin: none;
+     }
+ }
+ 
+
