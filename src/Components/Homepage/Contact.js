@@ -7,7 +7,7 @@ function Contact() {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_1y4hpmt','template_eu5bz1d', form.current, 'tiGyjZg3THi-uRP_a')
+    emailjs.sendForm(process.ENV.serviceID, process.ENV.templateID, form.current, process.ENV.publicKey)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
